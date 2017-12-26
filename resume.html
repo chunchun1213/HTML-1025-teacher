@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Theme Made By www.w3schools.com - No Copyright -->
-    <title>Bootstrap Theme Simply Me</title>
+    <title>陳瑞奇教授</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        .bg-1 {
-            background-color: #1abc9c;
-            color: #ffffff;
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        .row.content {height: 600px}
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
         }
-        .bg-2 {
-            background-color: #474e5d;
-            color: #ffffff;
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
         }
-        .bg-3 {
-            background-color: #ffffff;
-            color: #555555;
-        }
-        .container-fluid {
-            padding-top: 70px;
-            padding-bottom: 70px;
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {height: auto;}
         }
     </style>
 </head>
 <body>
 
-<div class="container-fluid bg-1 text-center">
-    <h3>Who Am I?</h3>
-    <img src="img/gsheu.jpg" class="img-circle" alt="Bird" width="250" height="250">
-    <h3>I'm a professor</h3>
-</div>
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-3 sidenav">
+            <div style="width:280px;height:350px;overflow-x:hidden;overflow-y:auto;background-color:white;">
+                <h4>瑞奇's Web</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="index.html">首頁</a></li>
+                    <li class="active"><a href="resume.html">簡歷</a></li>
+                    <li><a href="academic.html">學術</a></li>
+                    <li><a href="book.html">著作</a></li>
+                    <li><a href="student.html">學生</a></li>
+                    <li><a href="link.html">常用連結</a></li>
+                </ul><br>
+            </div>
+        </div>
 
-<div class="container-fluid bg-2 text-center">
-    <h3>What Am I?</h3>
-    <p>姓名：許健</p>
-    <p>English Name:Gene Sheu</p>
-    <p>任職單位：資訊工程學系 教授級專業技術人員</p>
-    <h>學歷</h>
-       <p>美國愛荷華大學 物理 博士</p>
-    <h>經歷</h>
-       <p> 國立清華大學材料科學工程所 兼任副教授</p>
-       <p> 工業技術研究院電子工業研究所 研究員</p>
-       <p> 大眾電腦股份有限公司 執行副總經理</p>
-      <p>  中央研究院分子生物研究所 博士後研究員</p>
-</div>
+        <div class="col-sm-9">
 
-<div class="container-fluid bg-3 text-center">
-    <h3>Where To Find Me?</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+            <h4>Jui-Chi Chen小檔案</h4>
+
+            <hr>
+            <img src="img/rikki1042.jpg" width="200"height="250"align="right">
+            <h2>基本資料</h2>
+            <p><b>姓名：</b>陳瑞奇
+            <p><b>任職單位：</b>資訊工程學系副教授
+            <p><b>E-mail：</b><a href="mailto:rikki@asia.edu.tw">rikki@asia.edu.tw</a></p>
+
+            <hr>
+            <h2>學歷</h2>
+            <p>國立中興大學資訊科學博士</p>
+            <p>國立交通大學資訊工程碩士</p>
+            <p>國立交通大學資訊工程學士</p>
+
+            <hr>
+            <h2>經歷</h2>
+            <p>亞洲大學副教授</p>
+            <p>亞洲大學助理教授</p>
+            <p>工研院電腦與通訊工業研究所工程師</p>
+
+            <hr>
+            <h2>專長</h2>
+            <p>資通工程(健康照護)</p>
+            <p>資料探勘與分析</p>
+            <p>無線網路資源管理</p>
+            <p>電腦網路</p>
+
+            <footer class="container-fluid">
+                <p align="center">Wanchun@Asia University 2017</p>
+            </footer>
 
 </body>
 </html>

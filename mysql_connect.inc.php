@@ -15,9 +15,8 @@ $db_server="localhost";
 $db_name="mydb";
 $db_user="root";
 $db_user="1234";
-if(!@mysql_connect($db_server,$db_user,$db_passed))
+$link=mysqli_connect('localhost','105021038',"#976IBQoX",'105021038');
+if(!$link){
     die("無法對資料庫連線");
-mysql_query("SET NAMES utf8");
-if(!@mysql_select_db($db_name))
-    die("無法使用資料庫")
+}
 ?>

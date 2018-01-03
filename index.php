@@ -19,9 +19,10 @@
 
         /* Set black background color, white text and some padding */
         footer {
-            background-color: #555;
+            background-color: #252525;
             color: white;
             padding: 15px;
+
         }
 
         /* On small screens, set height to 'auto' for sidenav and grid */
@@ -34,37 +35,32 @@
         }
     </style>
 </head>
-<body>
+<body style="background: linear-gradient(white,black)">
 
-<div class="container-fluid">
+
+<div class="container-fluid"  >
     <div class="row content">
-        <div class="col-sm-3 sidenav">
-
-                <h4>瑞奇's Web</h4>
-                <ul class="nav nav-pills nav-stacked">
-                    <li><a href="index.php">首頁</a></li>
-                    <li><a href="resume.html">簡歷</a></li>
-                    <li><a href="academic.html">學術</a></li>
-                    <li><a href="book.html">著作</a></li>
-                    <li class="active"><a href="student.html">學生</a></li>
-                    <li><a href="link.html">常用連結</a></li>
-                </ul><br>
-                <!--<div class="input-group">-->
-                    <!--<input type="text" class="form-control" placeholder="Search Blog..">-->
-                    <!--<span class="input-group-btn">-->
-          <!--<button class="btn btn-default" type="button">-->
-            <!--<span class="glyphicon glyphicon-search"></span>-->
-          <!--</button>-->
-        <!--</span>-->
-            <!--</div>-->
+        <div class="col-sm-1 sidenav">
+            <h4>瑞奇's Web</h4>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="index.php">首頁</a></li>
+                <li><a href="resume.html">簡歷</a></li>
+                <li><a href="academic.html">學術</a></li>
+                <li><a href="book.html">著作</a></li>
+                <li><a href="student.html">學生</a></li>
+                <li><a href="link.html">常用連結</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul><br>
         </div>
 
-        <div class="col-sm-9">
 
-            <h4>Jui-Chi Chen小檔案</h4>
+        <div class="col-sm-11" align="center">
+
+            <h4 align="center">Welcome to Jui-Chi Chen's web</h4>
 
             <hr>
-            <img src="img/011.jpg" width="200"height="250"align="right">
+            <img src="img/011.jpg" width="200"height="250"align="center">
+
             <h2>陳瑞奇<small>專任副教授</small></h2>
 
             <p><b>學歷：</b>國立中興大學資訊科學博士<br>
@@ -75,12 +71,18 @@
 
             <h4>研究領域</h4>
             <p>資通工程(健康照護)、資料探勘與分析、無線網路資源管理、電腦網路</p>
-            <hr>
 
-        </div> </div> </div>
-            <footer class="container-fluid">
-                <p align="center">Wanchun@Asia University 2017</p>
-            </footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.5721582672886!2d120.68521641538392!3d24.0461479833298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693b17a99d736b%3A0x1c471d70cdc89dc9!2z5Lqe5rSy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1514882014883" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid">
+    <p align="center">Wanchun@Asia University 2017</p>
+</footer>
+
+
 
 </body>
+
+
 </html>

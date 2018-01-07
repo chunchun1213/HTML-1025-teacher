@@ -19,7 +19,7 @@
 
         /* Set black background color, white text and some padding */
         footer {
-            background-color: #eeec5d;
+            background-color: #555;
             color: white;
             padding: 15px;
         }
@@ -38,37 +38,34 @@
 
 <div class="container-fluid">
     <div class="row content">
-        <div class="col-sm-3 sidenav">
+        <div class="col-sm-2 sidenav" style="font-family: Stencil">
 
-                <h4>瑞奇's Web</h4>
-                <ul class="nav nav-pills nav-stacked">
-                    <li><a href="index.php">首頁</a></li>
-                    <li><a href="resume.html">簡歷</a></li>
-                    <li><a href="academic.html">學術</a></li>
-                    <li><a href="book.html">著作</a></li>
-                    <li><a href="student.html">學生</a></li>
-                    <li class="active"><a href="link.html">常用連結</a></li>
-                </ul><br>
-                <!--<div class="input-group">-->
-                    <!--<input type="text" class="form-control" placeholder="Search Blog..">-->
-                    <!--<span class="input-group-btn">-->
-          <!--<button class="btn btn-default" type="button">-->
-            <!--<span class="glyphicon glyphicon-search"></span>-->
-          <!--</button>-->
-        <!--</span>-->
-            <!--</div>-->
+            <h4>瑞奇's Web</h4>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="index.php">首頁</a></li>
+                <li><a href="resume.php">簡歷</a></li>
+                <li><a href="academic.php">學術</a></li>
+                <li class="active"><a href="book.php">著作</a></li>
+                <li><a href="student.php">學生</a></li>
+                <li><a href="link.php">常用連結</a></li>
+            </ul><br>
         </div>
 
-        <div class="col-sm-9">
+        <div class="col-sm-10">
 
-            <h4>Jui-Chi Chen's Link</h4>
+            <h4>Jui-Chi Chen's課程</h4>
             <hr>
+            <h2>計算機組織</h2>
+            <h2>微處理器系統</h2>
+            <h2>無線網路</h2>
+            <h2>多媒體網站技術</h2>
+            <h2>嵌入式系統</h2>
+            <h2>網路分析與管理</h2>
 
-            <h2><a href="golink.html">重要訊息公告</a></h2>
         </div> </div> </div>
-            <footer class="container-fluid">
-                <p align="center">Wanchun@Asia University 2017</p>
-            </footer>
+<footer class="container-fluid">
+    <p align="center">Wanchun@Asia University 2017</p>
+</footer>
 
 </body>
 </html>

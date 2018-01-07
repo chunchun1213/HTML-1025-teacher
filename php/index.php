@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if(isset($_SESSION['username'])){
+    include ("mysql_connect.inc.php");
+    $sql="SELECT *FROM user where id='id'";
+    $result=mysqli_query($link,$sql);
+    $row=mysqli_fetch_row($result);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +33,7 @@
             background-color: #252525;
             color: white;
             padding: 15px;
-
+            font-family: "Arial Narrow";
         }
 
         /* On small screens, set height to 'auto' for sidenav and grid */
@@ -35,31 +46,36 @@
         }
     </style>
 </head>
-<body style="background: linear-gradient(white,black)">
-
+<body background="img/snoopy.jpg" >
 
 <div class="container-fluid"  >
     <div class="row content">
-        <div class="col-sm-1 sidenav">
+        <div class="col-sm-2 sidenav" style="font-family: Stencil">
             <h4>瑞奇's Web</h4>
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="index.php">首頁</a></li>
-                <li><a href="resume.html">簡歷</a></li>
-                <li><a href="academic.html">學術</a></li>
-                <li><a href="book.html">著作</a></li>
-                <li><a href="student.html">學生</a></li>
-                <li><a href="link.html">常用連結</a></li>
-                <li><a href="login.php">Login</a></li>
+                <li><a href="resume.php">簡歷</a></li>
+                <li><a href="academic.php">學術</a></li>
+                <li><a href="book.php">著作</a></li>
+                <li><a href="student.php">學生</a></li>
+                <li><a href="link.php">常用連結</a></li>
+                <?php
+                if(isset($_SESSION['username'])){
+                    echo '<li><a href="logout.php">Logout</a></li>';
+                }else{
+                    echo '<li><a href="login.php">Login</a></li>';
+                }
+                ?>
             </ul><br>
         </div>
 
 
-        <div class="col-sm-11" align="center">
+        <div class="col-sm-10" align="center">
 
             <h4 align="center">Welcome to Jui-Chi Chen's web</h4>
 
             <hr>
-            <img src="img/011.jpg" width="200"height="250"align="center">
+            <img src="img/011.jpg" width="200" height="250" align="center">
 
             <h2>陳瑞奇<small>專任副教授</small></h2>
 

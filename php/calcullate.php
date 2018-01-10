@@ -1,3 +1,4 @@
+<body background="img/cal.jpg"></body>
 <?php
 /**
  * Created by PhpStorm.

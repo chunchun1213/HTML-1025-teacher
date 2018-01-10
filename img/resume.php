@@ -39,7 +39,7 @@
         }
     </style>
 </head>
-<body background="img/dragoncat.jpg">
+<body background="img/imsges.jpg">
 
 <div class="container-fluid">
     <div class="row content">

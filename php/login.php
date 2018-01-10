@@ -86,7 +86,7 @@
 
 <form name="form"method="post"action="connect.php">
     <div class="imgcontainer" align="center">
-        <img src="../img/login.jpg" alt="Avatar" class="avatar" width="150px" height="150px">
+        <img src="img/login.jpg" alt="Avatar" class="avatar" width="150px" height="150px">
     </div>
 
     <div class="container">

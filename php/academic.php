@@ -34,7 +34,7 @@
         }
     </style>
 </head>
-<body>
+<body background="img/dragoncat.jpg">
 
 <div class="container-fluid">
     <div class="row content">

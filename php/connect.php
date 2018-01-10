@@ -2,7 +2,7 @@
 
     <meta http-equiv="Content-Type"content="text/html;charset=utf-8"/>
 <?php
-include("mysql_connect.inc.php");
+include ("mysql_connect.inc.php");
 $id=$_POST['id'];
 $pw=SHA1($_POST['pw']);
 $sql = "SELECT * FROM user where id = '$id'";
